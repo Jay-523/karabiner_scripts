@@ -1,0 +1,70 @@
+{
+    "description": "Custom shortcuts for delete operations",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "d",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "delete_forward"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "d",
+                "modifiers": {
+                    "mandatory": [
+                        "option"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "delete_forward",
+                    "modifiers": [
+                        "option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "d",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "option"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "delete_forward",
+                    "modifiers": [
+                        "control",
+                        "option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
