@@ -1,32 +1,41 @@
 {
-    "title": "Swap Escape and Delete",
-    "rules": [
-      {
-        "description": "Swap Escape and Delete keys",
-        "manipulators": [
-          {
-            "type": "basic",
+    "description": "Swap Escape and Delete keys",
+    "manipulators": [
+        {
+            "from": { "key_code": "escape" },
+            "to": [{ "key_code": "delete_forward" }],
+            "type": "basic"
+        },
+        {
+            "from": { "key_code": "delete_forward" },
+            "to": [{ "key_code": "escape" }],
+            "type": "basic"
+        },
+        {
             "from": {
-              "key_code": "escape"
+                "key_code": "escape",
+                "modifiers": { "mandatory": ["command"] }
             },
             "to": [
-              {
-                "key_code": "delete_forward"
-              }
-            ]
-          },
-          {
-            "type": "basic",
+                {
+                    "key_code": "delete_forward",
+                    "modifiers": ["command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
             "from": {
-              "key_code": "delete_forward"
+                "key_code": "escape",
+                "modifiers": { "mandatory": ["option"] }
             },
             "to": [
-              {
-                "key_code": "escape"
-              }
-            ]
-          }
-        ]
-      }
+                {
+                    "key_code": "delete_forward",
+                    "modifiers": ["option"]
+                }
+            ],
+            "type": "basic"
+        }
     ]
-  }
+}
