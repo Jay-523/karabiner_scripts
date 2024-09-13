@@ -1,0 +1,29 @@
+{
+    "description": "Remap caps_lock to super and shift+command+caps_lock to escape",
+    "manipulators": [
+        {
+            "from": { "key_code": "caps_lock" },
+            "to": [
+                {
+                    "key_code": "left_control",
+                    "modifiers": ["left_shift", "left_option", "left_command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "type": "basic",
+            "from": {
+                "key_code": "spacebar",
+                "modifiers": {
+                    "mandatory": ["control"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "escape"
+                }
+            ]
+        }
+    ]
+}

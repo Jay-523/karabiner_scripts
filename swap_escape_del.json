@@ -1,0 +1,32 @@
+{
+    "title": "Swap Escape and Delete",
+    "rules": [
+      {
+        "description": "Swap Escape and Delete keys",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "escape"
+            },
+            "to": [
+              {
+                "key_code": "delete_forward"
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "delete_forward"
+            },
+            "to": [
+              {
+                "key_code": "escape"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
