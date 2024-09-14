@@ -1,0 +1,49 @@
+{
+  "description": "Custom delete mappings",
+  "manipulators": [
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "d",
+              "modifiers": {
+                "mandatory": ["control"]
+              }
+            },
+            "to": [
+              {
+                "key_code": "delete_forward"
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "d",
+              "modifiers": {
+                "mandatory": ["option"]
+              }
+            },
+            "to": [
+              {
+                "key_code": "delete_forward",
+                "modifiers": ["option"]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "d",
+              "modifiers": {
+                "mandatory": ["command", "control"]
+              }
+            },
+            "to": [
+              {
+                "key_code": "delete_forward",
+                "modifiers": ["command", "control"]
+              }
+            ]
+          }
+        ]
+}
