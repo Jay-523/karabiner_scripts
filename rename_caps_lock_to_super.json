@@ -1,5 +1,5 @@
 {
-    "description": "Remap caps_lock to super and shift+command+caps_lock to escape",
+    "description": "Remap caps_lock to super",
     "manipulators": [
         {
             "from": { "key_code": "caps_lock" },
@@ -12,18 +12,12 @@
             "type": "basic"
         },
         {
-            "type": "basic",
             "from": {
                 "key_code": "spacebar",
-                "modifiers": {
-                    "mandatory": ["control"]
-                }
+                "modifiers": { "mandatory": ["control"] }
             },
-            "to": [
-                {
-                    "key_code": "escape"
-                }
-            ]
+            "to": [{ "key_code": "escape" }],
+            "type": "basic"
         }
     ]
 }

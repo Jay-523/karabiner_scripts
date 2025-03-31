@@ -1,0 +1,477 @@
+{
+    "description": "Typing base (Control + hjkl → arrow keys, Option + hjkl → move one word, Control + Command + hjkl → move one line)",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "down_arrow"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "l",
+                "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": [
+                        "option"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                        "option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "option"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                        "option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": [
+                        "option"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                        "option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "l",
+                "modifiers": {
+                    "mandatory": [
+                        "option"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                        "option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                        "command"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                        "command"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                        "command"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "l",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                        "command"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "l",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": [
+                        "option",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                        "option",
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "option",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                        "option",
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": [
+                        "option",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                        "option",
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "l",
+                "modifiers": {
+                    "mandatory": [
+                        "option",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                        "option",
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "command",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "up_arrow",
+                    "modifiers": [
+                        "command",
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "command",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                        "command",
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "j",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "command",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "down_arrow",
+                    "modifiers": [
+                        "command",
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "l",
+                "modifiers": {
+                    "mandatory": [
+                        "control",
+                        "command",
+                        "shift"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                        "command",
+                        "shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
