@@ -1,6 +1,28 @@
 {
-    "description": "Right Shift to Mouse Left Click when pressed alone, Shift when used with other keys",
+    "description": "Left Shift to Left Mouse Click, Right Shift to Right Mouse Click when pressed alone, Shift when used with other keys",
     "manipulators": [
+        {
+            "from": {
+                "key_code": "left_shift",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_shift",
+                    "lazy": true
+                }
+            ],
+            "to_if_alone": [
+                {
+                    "pointing_button": "button1"
+                }
+            ],
+            "type": "basic"
+        },
         {
             "from": {
                 "key_code": "right_shift",
@@ -18,7 +40,7 @@
             ],
             "to_if_alone": [
                 {
-                    "pointing_button": "button1"
+                    "pointing_button": "button2"
                 }
             ],
             "type": "basic"
