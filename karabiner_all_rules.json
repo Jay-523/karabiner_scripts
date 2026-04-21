@@ -1,0 +1,138 @@
+{
+    "title": "jay's personal remaps",
+    "rules": [
+        {
+            "description": "Caps Lock -> Hyper (ctrl+shift+opt+cmd); Ctrl+Space -> Escape",
+            "manipulators": [
+                {
+                    "from": { "key_code": "caps_lock" },
+                    "to": [
+                        {
+                            "key_code": "left_control",
+                            "modifiers": ["left_shift", "left_option", "left_command"]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "spacebar",
+                        "modifiers": { "mandatory": ["control"] }
+                    },
+                    "to": [{ "key_code": "escape" }],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "Left/Right Control: tap -> Escape, hold -> Control",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "left_control",
+                        "modifiers": { "optional": ["any"] }
+                    },
+                    "to": [{ "key_code": "left_control", "lazy": true }],
+                    "to_if_alone": [{ "key_code": "escape" }],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "right_control",
+                        "modifiers": { "optional": ["any"] }
+                    },
+                    "to": [{ "key_code": "right_control", "lazy": true }],
+                    "to_if_alone": [{ "key_code": "escape" }],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "Right Shift: tap -> right mouse click, hold -> Shift",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "right_shift",
+                        "modifiers": { "optional": ["any"] }
+                    },
+                    "to": [{ "key_code": "right_shift", "lazy": true }],
+                    "to_if_alone": [{ "pointing_button": "button2" }],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "Escape -> Left Mouse Click (NOTE: conflicts with 'Left Control tap -> Escape' rule)",
+            "manipulators": [
+                {
+                    "from": { "key_code": "escape" },
+                    "to": [{ "pointing_button": "button1" }],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "Custom delete mappings (Ctrl+D = forward delete, Opt+D = delete word, Cmd+Ctrl+D = delete line)",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "d",
+                        "modifiers": { "mandatory": ["control"] }
+                    },
+                    "to": [{ "key_code": "delete_forward" }],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "d",
+                        "modifiers": { "mandatory": ["option"] }
+                    },
+                    "to": [{ "key_code": "delete_forward", "modifiers": ["option"] }],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "d",
+                        "modifiers": { "mandatory": ["command", "control"] }
+                    },
+                    "to": [{ "key_code": "delete_forward", "modifiers": ["command", "control"] }],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "Vim arrows: Ctrl+hjkl = arrows; add Opt = word; add Cmd = line; add Shift = select",
+            "manipulators": [
+                { "type": "basic", "from": { "key_code": "h", "modifiers": { "mandatory": ["control"] } }, "to": [{ "key_code": "left_arrow" }] },
+                { "type": "basic", "from": { "key_code": "j", "modifiers": { "mandatory": ["control"] } }, "to": [{ "key_code": "down_arrow" }] },
+                { "type": "basic", "from": { "key_code": "k", "modifiers": { "mandatory": ["control"] } }, "to": [{ "key_code": "up_arrow" }] },
+                { "type": "basic", "from": { "key_code": "l", "modifiers": { "mandatory": ["control"] } }, "to": [{ "key_code": "right_arrow" }] },
+
+                { "type": "basic", "from": { "key_code": "h", "modifiers": { "mandatory": ["option"] } }, "to": [{ "key_code": "left_arrow",  "modifiers": ["option"] }] },
+                { "type": "basic", "from": { "key_code": "j", "modifiers": { "mandatory": ["option"] } }, "to": [{ "key_code": "down_arrow",  "modifiers": ["option"] }] },
+                { "type": "basic", "from": { "key_code": "k", "modifiers": { "mandatory": ["option"] } }, "to": [{ "key_code": "up_arrow",    "modifiers": ["option"] }] },
+                { "type": "basic", "from": { "key_code": "l", "modifiers": { "mandatory": ["option"] } }, "to": [{ "key_code": "right_arrow", "modifiers": ["option"] }] },
+
+                { "type": "basic", "from": { "key_code": "h", "modifiers": { "mandatory": ["control", "command"] } }, "to": [{ "key_code": "left_arrow",  "modifiers": ["command"] }] },
+                { "type": "basic", "from": { "key_code": "j", "modifiers": { "mandatory": ["control", "command"] } }, "to": [{ "key_code": "down_arrow",  "modifiers": ["command"] }] },
+                { "type": "basic", "from": { "key_code": "k", "modifiers": { "mandatory": ["control", "command"] } }, "to": [{ "key_code": "up_arrow",    "modifiers": ["command"] }] },
+                { "type": "basic", "from": { "key_code": "l", "modifiers": { "mandatory": ["control", "command"] } }, "to": [{ "key_code": "right_arrow", "modifiers": ["command"] }] },
+
+                { "type": "basic", "from": { "key_code": "h", "modifiers": { "mandatory": ["control", "shift"] } }, "to": [{ "key_code": "left_arrow",  "modifiers": ["shift"] }] },
+                { "type": "basic", "from": { "key_code": "j", "modifiers": { "mandatory": ["control", "shift"] } }, "to": [{ "key_code": "down_arrow",  "modifiers": ["shift"] }] },
+                { "type": "basic", "from": { "key_code": "k", "modifiers": { "mandatory": ["control", "shift"] } }, "to": [{ "key_code": "up_arrow",    "modifiers": ["shift"] }] },
+                { "type": "basic", "from": { "key_code": "l", "modifiers": { "mandatory": ["control", "shift"] } }, "to": [{ "key_code": "right_arrow", "modifiers": ["shift"] }] },
+
+                { "type": "basic", "from": { "key_code": "h", "modifiers": { "mandatory": ["option", "shift"] } }, "to": [{ "key_code": "left_arrow",  "modifiers": ["option", "shift"] }] },
+                { "type": "basic", "from": { "key_code": "j", "modifiers": { "mandatory": ["option", "shift"] } }, "to": [{ "key_code": "down_arrow",  "modifiers": ["option", "shift"] }] },
+                { "type": "basic", "from": { "key_code": "k", "modifiers": { "mandatory": ["option", "shift"] } }, "to": [{ "key_code": "up_arrow",    "modifiers": ["option", "shift"] }] },
+                { "type": "basic", "from": { "key_code": "l", "modifiers": { "mandatory": ["option", "shift"] } }, "to": [{ "key_code": "right_arrow", "modifiers": ["option", "shift"] }] },
+
+                { "type": "basic", "from": { "key_code": "h", "modifiers": { "mandatory": ["control", "command", "shift"] } }, "to": [{ "key_code": "left_arrow",  "modifiers": ["command", "shift"] }] },
+                { "type": "basic", "from": { "key_code": "j", "modifiers": { "mandatory": ["control", "command", "shift"] } }, "to": [{ "key_code": "down_arrow",  "modifiers": ["command", "shift"] }] },
+                { "type": "basic", "from": { "key_code": "k", "modifiers": { "mandatory": ["control", "command", "shift"] } }, "to": [{ "key_code": "up_arrow",    "modifiers": ["command", "shift"] }] },
+                { "type": "basic", "from": { "key_code": "l", "modifiers": { "mandatory": ["control", "command", "shift"] } }, "to": [{ "key_code": "right_arrow", "modifiers": ["command", "shift"] }] }
+            ]
+        }
+    ]
+}
